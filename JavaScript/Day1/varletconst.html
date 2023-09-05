@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    // let :
+    // cannot redeclare the variable
+    //can assign the value
+
+    let a=40;
+    console.log(a)
+   // let a=60
+    console.log(a)//Uncaught SyntaxError: Identifier 'a' has already been declared
+    
+    a=900
+    console.log(a)
+
+
+    // const:
+    // cannot redeclare the variable
+    //cannot 
+    const c=90;
+    console.log(c)
+
+    //const c=80;
+    console.log(c)////Uncaught SyntaxError: Identifier 'c' has already been declared
+
+   // c=90;
+    console.log(c)//Uncaught TypeError: Assignment to constant variable.
+
+
+    // var
+    var d=100;
+    console.log(d)
+    var d=200
+    console.log(d)
+    d=700;
+    console.log(d)
+    </script>
+</body>
+</html>

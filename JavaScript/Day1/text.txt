@@ -1,0 +1,125 @@
+Datatypes in JS:
+
+Primitive Datatypes
+Number => 2.2 1.2 1 0 89 67 90 1.2345687877788789898989898 
+
+String =>
+"hi hello" 
+"2"
+reprseented inside the ""
+
+Boolean
+true
+false
+
+"true"=> string 
+
+typeof()
+
+var a=20
+console.log(typeof(a))
+'number'
+
+var str="Hello World"
+
+typeof(str)
+'string'
+var b="20"
+typeof(b)
+'string'
+console.log(typeof(str))
+
+How to declare the variable in JS
+var keyword => certain limitations
+
+let 
+
+const 
+
+
+Composite Datatypes:
+Arrays 
+reprseented inside []
+collection of hetrogenouus dataypes
+var arr=[1,2,3,"hi",true]
+=>elements
+array start with index 0 and ends at n-1--(4)
+
+
+How do you access this?
+use index 
+access 1
+arr[indexno]
+arr[0]
+1
+arr[1]
+2
+arr[2]
+3
+arr[3]
+'hi'
+arr[4]
+true
+
+
+Objects:
+{}
+key:value pair
+
+var obj={
+    name:"jyoti",
+    course:"javascript",
+    year:2023
+}
+console.log(obj)
+
+access the value
+dot operator
+console.log(obj.name)
+obj.course
+obj.year
+
+
+= --> assignment operator
+
+equality check operator
+== --> value 
+2=="2"
+true
+
+=== ---> value+dataypes
+2==="2"
+false
+
+obj.course="react"
+console.log(obj)
+{name: 'jyoti', course: 'react', year: 2023}
+
+
+Trivial Datatypes:
+undefined
+declare a variable but not assign any value
+var a;
+var c;
+
+not defined
+not declaring the variable and trying to use.
+d
+b
+
+null
+empty
+
+
+keyword
+
+var let const
+
+var :
+redeclare again and again
+reassign the values again and again
+
+let:
+
+
+const:
