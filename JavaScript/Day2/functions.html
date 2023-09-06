@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Functions:
+
+        function displayname(){
+            console.log("XYZ")
+        }
+        displayname()
+
+        function add(){
+            console.log(8+8)
+        }
+        add()
+
+        //function with parameters
+        //(param1,param2)
+        function xyz(a,b,c){
+            // console.log(1)
+            console.log(a+b+c)//addition => numbers=>NAN=> not an number
+        }
+        xyz(1,2,3)// arguments
+        //a=1
+        //b=2
+        //c=3
+        //a+b+c
+        xyz(4,7,8)
+        xyz(89,3000,678)
+
+        function nameDisplay(username){
+            console.log("Name is",username)
+        }
+        nameDisplay("Jyothi")
+        //username=Jyothi
+        nameDisplay("ShahRukh")
+        xyz(78,90,23)
+
+        //function with return keyword
+        //if want to you use the output of 1 function into some other function/ some other place 
+
+        function key(){
+            return 90
+        }
+        key()
+        console.log(key())
+
+        var x=key()
+        console.log(x+2)
+
+        function displayNumber(num,num2){
+            console.log(num-num2)
+        }
+        displayNumber(x,20)//70
+
+
+        //annoymous functions
+        // annoymous =>without name
+        var annoymous= function(){
+            console.log("random")
+        }
+        annoymous()
+
+        var annoymousDisplayname=function(username){
+            console.log("Name is",username)
+        }
+        annoymousDisplayname("Jyothi")
+
+        //return keyword
+        var annoymousreturn=function(){
+            return 800;
+        }
+        console.log(annoymousreturn())
+
+        var annoymousrandom=function(a){
+            //block of code
+            return a;
+        }
+        console.log(annoymousrandom(89))
+
+        //arrow functions
+
+        // es6=> version
+        // arrow function
+        //=>
+
+        // Syntax:
+        var arrowfunction=()=>{
+            //block of code          
+        }
+        arrowfunction()
+
+        // Simple example
+        let arrowfunction2=(a)=>{
+            return 1000+a
+        }
+        console.log(arrowfunction2(10))
+        //output>1000+10=>1010
+
+        //for loop:
+        // loop=> infinite
+        //stop the loop somewhere
+
+        // 1 to 10
+        // start point:1
+        // end point :10
+
+        // for(initilization:startpoint;condition:to stop;increment/decrement){}
+
+        for(var i=1;i<=10;i++){
+            console.log(i)
+        }
+        //i=1; 1<10=true=>1---i=2
+        //i=2; 2<10=true=>2---i=3
+        //i=3; 3<10=true=>3---i=4
+        // .....
+        //i=10;10<=10=true=>10--i=11;
+        //1=11;11<=10=false=>loop terminate
+
+        // using loop u can do a tables
+        // table of 2
+        //table of 5
+        var number=5;
+        for(var i=1;i<=10;i++){
+            console.log(number*i)
+        }
+         //i=1; 1<10=true=>(2*i)2*1=2---i=2
+        //i=2; 2<10=true=>2*2(2*i)---i=3
+        //i=3; 3<10=true=>2*3(2*i)---i=4
+        // .....
+        //i=10;10<=10=true=>10--i=11;
+        //1=11;11<=10=false=>loop terminate
+
+        var arr=[1,2,3,4,5,6]
+        //homework=> print the array in console.
+
+
+
+        
+
+    </script>
+</body>
+</html>
