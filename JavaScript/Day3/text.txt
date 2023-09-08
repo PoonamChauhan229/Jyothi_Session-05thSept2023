@@ -1,0 +1,17 @@
+https://developer.mozilla.org/en-US/docs/Web/javascript
+
+Arrays:
+[]
+
+Arrays Methods:
+()
+
+3 Methods used => REACT
+
+Map
+>returns a new array with the results
+
+
+reduce
+filter
+

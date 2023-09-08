@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      // var arr=[89,89,9067,67]
+      // get a table of 2
+
+      // map method
+
+      // >returns a new array[]
+      // >transforms ur array[result]
+      //>takes each element
+
+      // for example=> for loop
+      // table of 2
+      // 6 steps
+
+      // arrayname.map(arrow function)
+
+      arr.map((element, index) => {
+        console.log("Element:", element + "  Index:", index);
+      });
+
+      arr.map((element, index) => {
+        console.log(element * 2);
+      });
+
+      var table = arr.map((element, index) => {
+        return element * 2;
+      });
+      console.log(table);
+
+      var add = arr.map((element, index) => {
+        return element + index;
+      });
+      console.log(add);
+
+      // filter
+      // > what u require> printed in console
+      //> what is nt req> ignored
+      // odd >
+      //if else
+      // if condition is exceuted else condition is ignored
+
+      const odd = arr.filter((element, index) => {
+        return element % 2 !== 0;
+      });
+      console.log(arr);
+      console.log(odd);
+
+      const even = arr.filter((element, index) => {
+        return element % 2 == 0;
+      });
+      console.log(arr);
+      console.log(even);
+
+      const words = ["spray","limit", "elite","exuberant","destruction", "present"];
+
+      const result = words.filter((word) => word.length > 6);
+
+      console.log(result);
+    
+     //reduce to a signle value
+     //compress / lessen
+
+    //  how to add an array elemnts using for loop
+      //accumulator>accumulator
+      //current value
+    const total=arr.reduce((acc,cv)=>{
+        return acc+cv
+    })
+    console.log(total)
+
+    //if you dont give acc value it will 1st element
+    //acc=>1 cv=>2=> 3=> acc
+    //acc>3 cv=>2=>  5=>acc
+    //acc>5 cv=>3    8=>acc
+    //acc>8 cv=>4    12=>acc
+    //acc>12 cv>5    17=>acc
+    //cc>17 cv>6     23=>acc
+    //acc>23 cv>7   30=>acc
+    //acc>30 cv>8   38
+    // ... 55
+
+//arraow function> one line dont need {} return 
+const totalnew=arr.reduce((acc,cv)=>acc+cv,100)
+    
+    console.log(totalnew)
+    // acc>100 cv>1
+    //acc>101 cv>2
+    //acc>103 
+    </script>
+  </body>
+</html>
