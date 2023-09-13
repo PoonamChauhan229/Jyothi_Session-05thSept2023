@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: yellow;
+    }
+</style>
+<body>
+    <!-- //tag -->
+    <!-- <p></p>
+    <h1></h1>
+    <span></span>
+    <p>Paragraph Tag</p>//element(tag+text inside)
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quis.</p>
+
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, suscipit.</h3>
+    </div> -->
+
+    <!-- create a element using JS  -->
+    <script>
+        // document.write("Hello")
+        console.log("Hello")
+
+        let anything=document.createElement('p')//tag create
+        anything.innerText="Hello World, I am New programmer!!!"
+        document.body.append(anything)
+
+
+        let box=document.createElement('div')
+        box.innerHTML=`<h1>Lorem ipsum dolor sit amet.</h1>
+        <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, suscipit.</h3>
+        `
+        // adding class
+        box.classList.add('container','wrapper','wrapper1')
+
+        //style=> JS 
+        box.style.backgroundColor="navy"
+
+        document.body.append(box)
+        console.log(box)
+
+
+
+
+
+
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
