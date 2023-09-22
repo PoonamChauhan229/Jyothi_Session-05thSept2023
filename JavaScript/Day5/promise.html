@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function as a parameter
+        const p1= new Promise((resolve,reject)=>{
+            
+        })
+        console.log(p1)
+
+        const p2= new Promise((resolve,reject)=>{
+            resolve("I came to the session")
+        })
+        console.log(p2)
+        p2.then((res)=>console.log(res))
+
+        const p3= new Promise((resolve,reject)=>{
+            reject("Sesssion Cancelled")
+        })
+        console.log(p3)
+        //catch method take a function
+        p3.catch((err)=>console.log(err))
+
+
+        const p4= new Promise((resolve,reject)=>{
+            // resolve("I came to the session2")
+            reject("Sesssion Cancelled2")
+        })
+       p4.then((res)=>console.log(res))
+       .catch((err)=>console.log(err))
+
+
+    </script>
+</body>
+</html>

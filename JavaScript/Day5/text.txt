@@ -1,0 +1,29 @@
+//fetch
+//promises
+
+promises
+async operations
+
+Promise=> 8:30
+    =>i will join
+    =>u will not join
+
+    =>u will join
+    =>i will not join
+    
+    =>dilema may or may not:Pending
+
+8:30
+
+=> initial state :Pending
+=> Fulfilled state: result
+=> Rejection state:Error
+
+returns an object
+new Promise()
+
+we have to handle errors+ get the result of it
+
+.then()// result
+.catch()// error handle
+//async and await
