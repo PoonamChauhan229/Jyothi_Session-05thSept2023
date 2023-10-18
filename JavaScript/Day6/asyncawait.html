@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // async await
+        // async 
+        // api => 2500 data
+        // time take is more
+        // 250 => 2.5K => time taken more
+        // another 50 lines to execute
+        // not a good practice
+        //async operayions // wont block the code
+        // async function 
+
+        async function getCountriesData(){
+            const  req=await fetch(`https://restcountries.com/v3.1/all`)
+            // convert req into json
+            const res=await req.json()
+            console.log(res)
+        }
+        getCountriesData()
+
+        // Arrow function
+        const getCountriesDataArraowFunction=async ()=>{
+            const  req=await fetch(`https://restcountries.com/v3.1/all`)// asumes its an GET request
+            // convert req into json
+            const res=await req.json()
+            console.log(res)
+        }
+        getCountriesDataArraowFunction()
+
+        // Fetch
+        // HTTP methods:
+        // GET => READ
+        // POST =>CREATE
+        // DELETE =>DELETE
+        // PUT =>UPDATE
+        // CRUD 
+        // CREATE READ UPDATE DELETE
+        
+        // CRUD OPS IN JS
+        
+
+
+    </script>
+</body>
+</html>
