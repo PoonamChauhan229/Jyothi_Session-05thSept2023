@@ -1,0 +1,14 @@
+// Fetch
+// HTTP methods:
+// GET => READ
+// POST =>CREATE
+// DELETE =>DELETE
+// PUT =>UPDATE
+// CRUD 
+// CREATE READ UPDATE DELETE
+
+// CRUD OPS IN JS
+
+READ 
+
+https://652e7b520b8d8ddac0b1761f.mockapi.io/users

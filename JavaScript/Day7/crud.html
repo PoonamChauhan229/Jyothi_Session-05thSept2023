@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// https://652e7b520b8d8ddac0b1761f.mockapi.io/users
+// users data
+
+// READ =>GET METHOD
+async function getUserData(){
+   const req=await fetch(`https://652e7b520b8d8ddac0b1761f.mockapi.io/users`)
+   const res=await req.json()
+   console.log(res)
+}
+getUserData()
+
+//DELETE
+
+async function deleteUsersData(){
+    console.log(1)
+    const req=await fetch(`https://652e7b520b8d8ddac0b1761f.mockapi.io/users/3`,{
+        method:"DELETE"
+    })
+//     const res=await req.json()
+//    console.log(res)
+}
+//deleteUsersData()
+
+// Get the Data by using ID
+
+async function getUserDatabyId(){
+   const req=await fetch(`https://652e7b520b8d8ddac0b1761f.mockapi.io/users/10`)
+   const res=await req.json()
+   console.log(res)
+   console.table(res)
+}
+getUserDatabyId()
+
+
+    </script>
+</body>
+</html>
